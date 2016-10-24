@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+About - GOV.UK Prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <form action="/aboutswitch.html" method="get" class="form">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">UC Switch and your area</h1>
+
+      <p>
+    This is so we can let you know when UC Switch will be happening for your home.
+      </p>
+      <div class="form-group">
+        <label class="form-label-bold" for="postcode">The first part of your postcode</label>
+        <p class="form-hint">eg LS1 or YO26</p>
+        <input type="text" class="form-control" id="postcode">
+      </div>
+
+      <div class="form-group">
+        <input type="submit" class="button" href="/aboutswitch.html" value="Continue">
+      </div>
+
+    </div>
+  </div>
+</form>
+
+</main>
+
+{% endblock %}

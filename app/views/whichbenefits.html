@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+About - GOV.UK Prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <form action="/postcode.html" method="get" class="form">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Which benefits are you receiving now?</h1>
+
+      <p>
+      Select which of the following benefits you are currently receiving each month.
+      You can select more than one.
+      </p>
+      <div class="form-group">
+        <fieldset>
+
+          <legend class="visuallyhidden">Which benefits are you on?</legend>
+
+          <label for="benefit_WTC" class="block-label">
+            <input type="checkbox" name="benefit_WTC" value="WTC" id="benefit_WTC">
+            Working Tax Credits
+          </label>
+
+          <label for="benefit_CTC" class="block-label">
+            <input type="checkbox" name="benefit_CTC" value="CTC" id="benefit_CTC">
+            Child Tax Credits
+          </label>
+
+          <label for="benefit_JSA" class="block-label">
+            <input type="checkbox" name="benefit_CTC" value="JSA" id="benefit_JSA">
+            Jobseeker's Allowance
+          </label>
+
+          <label for="benefit_ESA" class="block-label">
+            <input type="checkbox" name="benefit_ESA" value="JSA" id="benefit_ESA">
+            Employment Support Allowance
+          </label>
+
+          <label for="benefit_IS" class="block-label">
+            <input type="checkbox" name="benefit_IS" value="IS" id="benefit_IS">
+            Income Support
+          </label>
+
+          <label for="benefit_HB" class="block-label">
+            <input type="checkbox" name="benefit_HB" value="HB" id="benefit_HB">
+            Housing Benefits
+          </label>
+
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" class="button" href="/postcode.html" value="Continue">
+      </div>
+
+    </div>
+  </div>
+</form>
+
+</main>
+
+{% endblock %}
