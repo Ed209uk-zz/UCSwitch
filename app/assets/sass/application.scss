@@ -29,5 +29,10 @@ $path: "/public/images/";
 .bold-small {
   font-weight: bold;
 }
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
