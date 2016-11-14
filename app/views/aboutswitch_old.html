@@ -1,0 +1,303 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+About - GOV.UK Prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <form action="/aboutswitch.html" method="get" class="form">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">UC Switch is coming to your area in March 2018</h1>
+
+      <p class="lede">
+    Universal Credit has been introduced to give you the
+    support you need to find and progress in work. We want
+    you to be able to benefit from all the positives that work
+    brings. This guide will help you do that and covers the
+    following areas:
+      </p>
+
+      {% if benefit_WTC %}
+        {% include "includes/tom.html" %}
+      {% endif %}
+
+      <ul class="list list-bullet">
+        <li class="bold-medium"><a href="#yourresponsibilities">Your responsibilities</a></li>
+        <li class="bold-medium"><a href="#yourcommitment">Your Commitment</a></li>
+        <li class="bold-medium"><a href="#payments">Payments</a></li>
+        <li class="bold-medium"><a href="#fulltimeworksearch">Full time work search</a></li>
+        <li class="bold-medium"><a href="#openingupwork">Opening up work, taper and in work progression</a></li>
+        <li class="bold-medium"><a href="#self-employment">Self-employment</a></li>
+        <li class="bold-medium"><a href="#helpwithchildcare">Help with childcare</a></li>
+        <li class="bold-medium"><a href="#sanctions">Sanctions</a></li>
+      </ul>
+
+      <a name="yourresponsibilities"></a>
+      <h1 class="heading-large">Your responsibilities</h1>
+      <p>
+      When you claim Universal Credit there are a number of
+      activities you become responsible for in order to receive
+      your payment. You can get more information about
+      Universal Credit online at www.gov.uk/universalcredit
+    </p>
+    <ul class="list list-bullet">
+      <li>Complete work search activities for up to 35 hours per week.</li>
+      <li>Complete a tailored commitment with your work coach.</li>
+      <li>You will be responsible for paying your own rent and other housing costs.</li>
+      <li>Report all your changes in circumstances through your account</li>
+      <li>Manage your monthly payments and budget monthly.</li>
+      <li>Working part-time and able to earn more? You’re required to seek additional work and increase your earnings</li>
+    </ul>
+    <a name="yourcommitment"></a>
+    <h1 class="heading-large">Your Commitment</h1>
+  <p class="bold-small">When you claim Universal Credit you will need to complete and accept a tailored
+      commitment.
+    </p>
+    <p>
+      In most cases your Commitment will be drawn up during a conversation with your work coach at
+      your local Jobcentre. It will set out what you have agreed to do to prepare for and look for work,
+      or to increase your earnings if you are already working.
+    </p>
+    <p>
+      It will be based on your personal circumstances and will be reviewed and updated on an on-going basis.
+      Each time it is updated, you will need to accept a new Commitment to keep receiving Universal Credit.
+  </p>
+  <p>
+    You will be able to view your latest Commitment on-line though your account.
+  </p>
+  <p>
+  If you claim Universal Credit as a couple, both of you will need to accept a Commitment.
+  You will each have your own Commitment, and yours may be affected if your partner starts
+  work or their circumstances change.
+  </p>
+  <p class="bold-small">
+    If you are earning as much as can be expected depending upon your current circumstances.
+  </p>
+    <p>
+    You will receive financial support without any other conditions to increase your earnings
+    </p>
+    <p class="bold-small">
+      If you are able and available for work.
+    </p>
+      <p>
+      You will need to do everything you reasonably can to give yourself the best chance of finding work.
+      Preparing for and getting a job must be your full time focus. If you do not do this without a good
+      reason, you will receive reduced payments of your Universal Credit, known as a sanction.
+      </p>
+      <p class="bold-small">
+        If you currently have limited capability for work, related to a disability or health condition,
+        but this is expected to change over time.
+      </p>
+        <p>
+        You will be supported until your circumstances improve and you can work. You will be
+        expected to prepare for work so far as you are able.
+        </p>
+        <p class="bold-small">
+          If you have a disability or health condition which prevents you from working.
+        </p>
+          <p>
+          You will not be asked to work, and will be supported through Universal Credit.
+          </p>
+          <p class="bold-small">
+            If you care for a severely disabled person for at least 35 hours a week.
+          </p>
+            <p>
+            You will not be required to work.
+            </p>
+            <p class="bold-small">
+              If you are the lead carer of a child.
+            </p>
+              <p>
+              You will be supported in your current circumstances. What is expected of you
+              as a lead carer in return for getting Universal Credit will be based on the
+              age of the youngest child in the household.
+              </p>
+              <p class="bold-small">
+                Not meeting your responsibilities
+              </p>
+                <p>
+                Your Commitment will clearly state what will happen if you fail to meet
+                each of your responsibilities. You will receive reduced payments, known
+                as a sanction, if you fail to meet one of your responsibilities and
+                can’t give a good reason to explain why.
+                </p>
+
+          <a name="payments"></a>
+          <h1 class="heading-large">Payments</h1>
+          <p class="bold-small">
+            Universal Credit is paid monthly and you are required to budget monthly.
+          </p>
+          <p>
+            When you make a new claim to Universal Credit you will receive your first
+            payment, together with a letter telling you how much will be paid, around
+            6 weeks after the date you make your claim. We can’t confirm how much you’ll
+            get before then, because the amount depends upon your circumstances, for
+            example if you’re caring for someone else and/or if you have received any
+            income or earnings that month.
+          </p>
+          <p class="bold-small">
+            If you feel you may experience financial difficulties during this time please
+            check with your work coach as you may be able get an advance on your first
+            Universal Credit payment if you’ve recently been receiving another benefit
+            or you’re in urgent financial need.
+          </p>
+          <p>
+            Your payment will usually arrive on the same date each month or earlier
+            if the date falls on a weekend or bank holiday.
+          </p>
+          <p>
+            If you are employed, Her Majesty’s Revenue and Customs (HMRC) will tell
+            us about any money you’ve earned.
+          </p>
+          <p>
+            Universal Credit is paid monthly directly into the account you have chosen.
+            The amount you get is calculated each month, and depends on your circumstances
+            and earnings during that time. This is known as an assessment period.
+          </p>
+          <p>
+            Your first assessment period usually starts 7 days after you submit your claim.
+            This 7 day waiting period may apply if you are out of work and claim Universal Credit.
+          </p>
+          <p>
+            Your first assessment period usually starts 7 days after you submit your claim.
+            This 7 day waiting period may apply if you are out of work and claim Universal Credit.
+          </p>
+          If you were previously in receipt of tax credits please note that your tax credits
+          will stop as soon as you make a claim to Universal Credit. For further information
+          see: Universal Credit: <a href="https://www.gov.uk/government/publications/help-with-budgeting-your-universal-credit">
+            help with managing your money - GOV.UK</a>
+          </p>
+            <p class="bold-small">Extra support with childcare  </p>
+            <p>
+            You may be worried about paying for childcare while you work. We want to help,
+            so we’ve made it quick and easy for you to claim back up to 85% of the cost of
+            approved childcare. We add this to your monthly payment. Speak to your work coach
+            if you wish to find out more.
+            </p>
+            <p>
+            Information on Universal Credit payments and different earnings patterns (Payment Cycles).
+            The graphics below represent the first payment cycle following your new claim to Universal
+            Credit; subsequent payments will be made on a calendar monthly basis.
+            </p>
+            <p>
+            If waiting for your first Universal Credit payment will put you into financial difficulties,
+            there is support available to you.
+            <p class="bold-small">Contact your work coach if you need further information on:</p>
+            <ul class="list list-bullet">
+              <li>Personal Budgeting Support (money advice)</li>
+              <li>An Advance Payment</li>
+              <li>A Discretionary Housing Payment (via your local authority)</li>
+            </ul>
+            </p>
+            <p class="bold-small">Payment Cycles</p>
+            <p>
+            If you are working, your own circumstances will differ depending upon when
+            you get paid by your employer” please.
+            </p>
+
+            <a name="fulltimeworksearch"></a>
+            <h1 class="heading-large">Full time work search</h1>
+            <p>
+            In most cases you will need to complete up to 35 hours work search activity
+            per week in order to receive Universal Credit. Here are some suggestions to get
+            you started.
+            </p>
+
+            <a name="openingupwork"></a>
+            <h1 class="heading-large">Opening up work, taper and in work progression</h1>
+            <p>Universal Credit is ‘opening up work’ and allowing access to a wider range of jobs by:
+            <ul class="list list-bullet">
+              <li>helping make sure you’re always better off in work than on benefits</li>
+              <li>allowing part-time and short-term work to act as a stepping stone into work</li>
+              <li>providing you with support from a work coach to help you every step of the way</li>
+              <li>removing barriers, allowing you to work more than 16 hours a week and still claim
+                Universal Credit</li>
+            </ul>
+            </p>
+            <p>For further information see Universal Credit and work - GOV.UK.</p>
+
+            <h1 class="heading-medium">Taper</h1>
+
+            <a name="self-employment"></a>
+            <h1 class="heading-large">Self-employment</h1>
+
+            <a name="helpwithchildcare"></a>
+            <h1 class="heading-large">Help with childcare</h1>
+            <p>
+            Universal Credit helps working parents by providing financial support for registered
+            childcare, no matter how many hours you work. If you are claiming with a partner both
+            of you normally need to be in work to receive this help. It is also available if you
+            are claiming Universal Credit and in re-ceipt of Statutory Sick Pay, Statutory Maternity
+            Pay, Ordinary Statutory Paternity Pay, Additional Statutory Paternity Pay, Shared Paternity
+            Pay, Statutory Adoption Pay and Maternity Allowance.
+            </p>
+            <p>
+            Childcare support is paid in arrears, so if you think you need help with up-front costs,
+            you should discuss this with your work coach. Claimants with a firm and accepted job offer
+            can claim child-care costs a month prior to starting work. Additional help to meet an initial
+            payment for childcare costs may also be available subject to certain conditions. Talking to
+            your work coach as soon as possible about your job offer and the support options available to
+            you will help with getting a routine in place for when you start work.
+            </p>
+            <p>
+            Childcare support is paid in arrears, so if you think you need help with up-front costs,
+            you should discuss this with your work coach. Claimants with a firm and accepted job offer
+            can claim child-care costs a month prior to starting work. Additional help to meet an initial
+            payment for childcare costs may also be available subject to certain conditions. Talking to
+            your work coach as soon as possible about your job offer and the support options available to
+            you will help with getting a routine in place for when you start work.
+            </p>
+            <p>
+            You will be able to claim back up to 85 per cent of your actual paid out childcare costs if
+            you meet the qualifying conditions and your childcare costs are eligible. This payment is
+            capped so you could receive a maximum childcare payment of:
+            <p class="bold-small">£646 for one child or £1,108 for two or more children.</p>
+            </p>
+            <p>
+            Childcare costs can also be claimed for at least a month after your employment ends, which
+            can help you to maintain childcare as you move between jobs.
+            </p>
+            <p>
+            Your childcare support in Universal Credit is paid in respect of payments to registered or approved
+            childcare providers. This generally means the childcare provider is registered with OFSTED in England,
+            the Care Inspectorate in Scotland or Care and Social Services Inspectorate for Wales (CSSIW). Approved
+            childcare can include care provided in school or in another place by a childminder, playscheme, nursery
+            or club. Your approved childcare provider should be able to provide you with a registration number.
+            To make a claim you will need to provide evidence of your childcare placement(s) and the actual cost of
+            childcare with invoices or receipts.
+            </p>
+            <p class="bold-small">Other help with childcare costs</p>
+            <p>
+            All three- and four-year-olds in England can get 570 hours of free early education or childcare per year.
+            This is usually taken as 15 hours each week for 38 weeks of the year. Some two-year-olds are also eligible.
+            From September 2017, the free childcare entitlement in England will be doubled to 30 hours a week for
+            working parents of three- and four-year-olds. Help with childcare is also available in Scotland and Wales.
+            </p>
+            <p>
+            You cannot claim Universal Credit childcare support to cover any free provision. However, you can claim
+            Universal Credit childcare support to cover the cost of the hours over and above the free provision.
+            If your child starts getting free childcare, you should tell DWP about the change straight away.
+            </p>
+            <p>
+            If you are working and responsible for a child, your employer may be able to help you with child-care costs
+            through Employer Supported Childcare in the form of childcare vouchers. Employer Supported Childcare will
+            close to new entrants from April 2018. From early 2017 the new Tax-Free Childcare scheme will be introduced
+            to support parents with their childcare costs. If you are in receipt of Universal Credit you will not be
+            eligible for Tax-Free Childcare at the same time, so you will need to choose between them. If you need help with
+            this you should speak to your work coach. For further information on registered providers, free childcare and
+            other childcare support, see <a href="https://www.gov.uk/childcaresupport">https://www.gov.uk/childcaresupport</a>
+            </p>
+
+            <a name="sanctions"></a>
+            <h1 class="heading-large">Sanctions</h1>
+  </div>
+</form>
+
+</main>
+
+{% endblock %}
